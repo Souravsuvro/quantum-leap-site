@@ -31,7 +31,8 @@
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css}\"",
     "generate-sitemap": "node scripts/generate-sitemap.js",
-    "lint-fix": "node scripts/lint-fix.js"
+    "lint-fix": "node scripts/lint-fix.js",
+    "vercel-build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
