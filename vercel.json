@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "quantum-leap-site",
   "builds": [
     {
       "src": "package.json",
@@ -13,8 +12,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
