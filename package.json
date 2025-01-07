@@ -32,7 +32,7 @@
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css}\"",
     "generate-sitemap": "node scripts/generate-sitemap.js",
     "lint-fix": "node scripts/lint-fix.js",
-    "vercel-build": "CI=false npm ci && react-scripts build"
+    "vercel-build": "npm install && npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -74,5 +74,9 @@
     "eslint-plugin-testing-library": "^5.11.1",
     "prettier": "^2.8.4",
     "react-app-rewired": "^2.2.1"
+  },
+  "engines": {
+    "node": ">=20.12.2",
+    "npm": ">=10.9.0"
   }
 }

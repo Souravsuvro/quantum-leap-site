@@ -6,7 +6,7 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build",
-        "buildCommand": "CI=false npm ci && react-scripts build"
+        "buildCommand": "npm install && npm run build"
       }
     }
   ],
@@ -15,5 +15,8 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+  "env": {
+    "NODE_VERSION": "20.12.2"
+  }
 }
