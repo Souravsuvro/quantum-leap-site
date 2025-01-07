@@ -32,7 +32,7 @@
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css}\"",
     "generate-sitemap": "node scripts/generate-sitemap.js",
     "lint-fix": "node scripts/lint-fix.js",
-    "vercel-build": "react-scripts build"
+    "vercel-build": "npm install && react-scripts build && node scripts/generate-sitemap.js"
   },
   "eslintConfig": {
     "extends": [
