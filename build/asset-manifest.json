@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.css": "https://quantum-leap-site.vercel.app/static/css/main.a79de0cb.css",
+    "main.js": "https://quantum-leap-site.vercel.app/static/js/main.e8a1c8a4.js",
+    "index.html": "https://quantum-leap-site.vercel.app/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.a79de0cb.css",
+    "static/js/main.e8a1c8a4.js"
+  ]
+}

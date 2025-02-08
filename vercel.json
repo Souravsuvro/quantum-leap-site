@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "^/static/(.*)",
+      "headers": {
+        "cache-control": "v-max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "^/(.*\\.(js|css|json|txt|ico|png|jpg|svg))",
+      "headers": {
+        "cache-control": "v-max-age=86400"
+      }
+    },
+    {
+      "src": "^/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "REACT_APP_ENV": "production"
+  },
+  "github": {
+    "silent": true
+  }
+}
